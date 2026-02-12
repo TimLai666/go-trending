@@ -2,10 +2,10 @@ package trending
 
 import (
 	"fmt"
-	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
 	"net/url"
+	"os"
 	"reflect"
 	"strings"
 	"testing"
@@ -49,7 +49,7 @@ func testMethod(t *testing.T, r *http.Request, want string) {
 
 // getContentOfFile is a utility method to open and return the content of fileName
 func getContentOfFile(fileName string) []byte {
-	content, err := ioutil.ReadFile(fileName)
+	content, err := os.ReadFile(fileName)
 	if err != nil {
 		return []byte{}
 	}
