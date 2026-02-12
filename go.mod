@@ -1,6 +1,6 @@
 module github.com/andygrunwald/go-trending
 
-go 1.24.0
+go 1.25
 
 require github.com/PuerkitoBio/goquery v1.11.0
 
