@@ -2,10 +2,10 @@ package trending
 
 import (
 	"fmt"
-	"os"
 	"net/http"
 	"net/http/httptest"
 	"net/url"
+	"os"
 	"reflect"
 	"strings"
 	"testing"
